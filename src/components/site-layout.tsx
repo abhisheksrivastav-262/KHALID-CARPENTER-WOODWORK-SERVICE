@@ -66,31 +66,23 @@ export function SiteLayout() {
   );
 }
 
-function Brand({ showDecorator = true }: { showDecorator?: boolean }) {
+function Brand() {
   return (
     <Link
       to="/"
       className="group flex min-w-0 shrink-0 items-center gap-2 sm:gap-3"
-      aria-label={`${showDecorator ? "Khalid Carpenter and Woodwork Service Interior Decorator" : "Khalid Carpenter and Woodwork Service"} home`}
+      aria-label="Khalid Carpenter and Woodwork Service home"
     >
       <span className="grid size-9 shrink-0 place-items-center border border-gold/80 font-display text-xl leading-none text-gold sm:size-10">
         K
       </span>
       <span className="flex min-w-0 flex-col leading-none">
-        <span className="mb-1 text-[0.48rem] font-bold tracking-[0.18em] text-gold sm:text-[0.54rem]">
+        <span className="mb-1 text-[0.48rem] font-bold tracking-[0.22em] text-gold sm:text-[0.54rem]">
           TIP TOP INTERIOR
         </span>
-        <span className="font-display text-lg font-semibold tracking-[0.04em] text-background sm:text-xl">
-          KHALID
+        <span className="whitespace-nowrap font-display text-[0.54rem] font-semibold tracking-[0.02em] text-background sm:text-sm sm:tracking-[0.04em]">
+          KHALID CARPENTER &amp; WOODWORK SERVICE
         </span>
-        <span className="mt-1 whitespace-nowrap text-[0.54rem] font-semibold tracking-[0.08em] text-background sm:text-[0.62rem]">
-          CARPENTER &amp; WOODWORK SERVICE
-        </span>
-        {showDecorator && (
-          <span className="mt-1 text-[0.54rem] font-semibold tracking-[0.16em] text-gold sm:text-[0.62rem]">
-            INTERIOR DECORATOR
-          </span>
-        )}
       </span>
     </Link>
   );
@@ -113,7 +105,7 @@ function SiteHeader() {
         </div>
       </div>
       <div className="site-container relative flex min-h-[4.5rem] items-center justify-between gap-4">
-        <Brand showDecorator={false} />
+        <Brand />
         <nav aria-label="Main navigation" className="hidden items-center gap-6 lg:flex">
           {navigation.slice(0, 2).map((item) => (
             <a key={item.href} className="nav-link" href={item.href}>
