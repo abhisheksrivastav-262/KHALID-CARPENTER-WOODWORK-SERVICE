@@ -5,13 +5,19 @@ import { ContactCta, ContentSection, FeatureList, HeroPage } from "@/components/
 export const Route = createFileRoute("/services/woodwork")({
   head: () => ({
     meta: [
-      { title: "Woodwork & Carpentry in Delhi | TIP TOP INTERIORS" },
+      {
+        title:
+          "Woodwork & Carpentry in Delhi | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         name: "description",
         content:
           "Made-to-measure furniture, wardrobes, doors, cabinets, partitions, repairs and professional wood finishing by Khalid Carpenter and Woodwork Service Interior Decorator.",
       },
-      { property: "og:title", content: "Woodwork & Carpentry | TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content: "Woodwork & Carpentry | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         property: "og:description",
         content: "Custom carpentry and timber finishes for homes in Delhi.",

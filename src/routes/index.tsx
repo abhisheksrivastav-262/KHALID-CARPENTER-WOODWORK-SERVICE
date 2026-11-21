@@ -185,7 +185,7 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "Khalid Carpenter and Woodwork Service Interior Decorator | TIP TOP INTERIORS, Delhi",
+          "Khalid Carpenter and Woodwork Service Interior Decorator | Khalid Carpenter and Woodwork Service Interior Decorator, Delhi",
       },
       {
         name: "description",
@@ -195,7 +195,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:title",
         content:
-          "Khalid Carpenter and Woodwork Service Interior Decorator | TIP TOP INTERIORS, Delhi",
+          "Khalid Carpenter and Woodwork Service Interior Decorator | Khalid Carpenter and Woodwork Service Interior Decorator, Delhi",
       },
       {
         property: "og:description",
@@ -212,7 +212,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "HomeAndConstructionBusiness",
           name: "Khalid Carpenter and Woodwork Service Interior Decorator",
-          alternateName: "TIP TOP INTERIORS",
+          alternateName: "Khalid Carpenter and Woodwork Service Interior Decorator",
           url: "https://tiptopinteriors.online",
           telephone: "+919212461719",
           address: {
@@ -405,9 +405,9 @@ function HomePage() {
               <div className="absolute bottom-0 left-0 flex items-center gap-3 bg-ink px-5 py-4 text-background">
                 <span className="font-display text-3xl text-gold">T</span>
                 <span className="text-xs font-semibold leading-5 tracking-[0.14em]">
-                  TIP TOP
+                  KHALID CARPENTER & WOODWORK SERVICE
                   <br />
-                  INTERIORS
+                  INTERIOR DECORATOR
                 </span>
               </div>
             </div>
@@ -612,7 +612,7 @@ function HomePage() {
           <div className="site-container">
             <div className="mb-10 max-w-2xl">
               <p className="mb-3 text-xs font-bold tracking-[0.2em] text-gold">
-                WHY TIP TOP INTERIORS
+                WHY Khalid Carpenter and Woodwork Service Interior Decorator
               </p>
               <h2 className="font-display text-4xl font-medium leading-tight text-background">
                 Craftsmanship you can feel at home
@@ -884,7 +884,7 @@ function HomePage() {
                 <iframe
                   className="size-full min-h-72 border-0"
                   src={mapEmbedUrl}
-                  title="Map to TIP TOP INTERIORS in Laxmi Nagar, Delhi"
+                  title="Map to Khalid Carpenter and Woodwork Service Interior Decorator in Laxmi Nagar, Delhi"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />

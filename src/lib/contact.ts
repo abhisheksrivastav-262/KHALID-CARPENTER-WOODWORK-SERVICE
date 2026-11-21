@@ -20,7 +20,7 @@ export function createEnquiryMessage({
   message,
 }: EnquiryDetails): string {
   return [
-    "Hello TIP TOP INTERIORS,",
+    "Hello Khalid Carpenter and Woodwork Service Interior Decorator,",
     "",
     "I would like to enquire about your services.",
     "",

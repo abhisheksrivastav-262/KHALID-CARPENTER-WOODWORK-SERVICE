@@ -13,13 +13,19 @@ const mapDirectionsUrl =
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact TIP TOP INTERIORS | Laxmi Nagar, Delhi" },
+      {
+        title:
+          "Contact Khalid Carpenter and Woodwork Service Interior Decorator | Laxmi Nagar, Delhi",
+      },
       {
         name: "description",
         content:
           "Contact Md. Khalid for carpentry, woodwork, interior decoration, renovation or M.K. Property enquiries. Call, WhatsApp or send an enquiry.",
       },
-      { property: "og:title", content: "Contact TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content: "Contact Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       { property: "og:description", content: "Call or WhatsApp Md. Khalid in Laxmi Nagar, Delhi." },
     ],
   }),
@@ -44,7 +50,7 @@ function ContactPage() {
               KHALID CARPENTER AND WOODWORK SERVICE INTERIOR DECORATOR
             </p>
             <h2 className="mt-3 font-display text-4xl font-semibold leading-tight">
-              TIP TOP INTERIORS
+              Khalid Carpenter and Woodwork Service Interior Decorator
             </h2>
             <p className="mt-2 text-sm leading-6 text-muted-foreground">
               Interior decoration, woodwork, carpentry and renovation. M.K. PROPERTY enquiries
@@ -100,7 +106,7 @@ function ContactPage() {
             <iframe
               className="size-full min-h-72 border-0"
               src={mapEmbedUrl}
-              title="Map to TIP TOP INTERIORS in Laxmi Nagar, Delhi"
+              title="Map to Khalid Carpenter and Woodwork Service Interior Decorator in Laxmi Nagar, Delhi"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

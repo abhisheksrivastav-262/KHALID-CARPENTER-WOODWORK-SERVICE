@@ -314,7 +314,7 @@ export function ReviewsContent() {
 export function EnquiryForm({
   idPrefix = "enquiry",
   heading = "Send an enquiry",
-  description = "Your details open in a WhatsApp message addressed to TIP TOP INTERIORS at 9212461719.",
+  description = "Your details open in a WhatsApp message addressed to Khalid Carpenter and Woodwork Service Interior Decorator at 9212461719.",
   submitLabel = "SUBMIT ENQUIRY",
 }: {
   idPrefix?: string;

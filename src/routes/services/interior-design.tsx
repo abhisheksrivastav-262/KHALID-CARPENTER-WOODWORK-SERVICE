@@ -5,13 +5,19 @@ import { ContactCta, ContentSection, FeatureList, HeroPage } from "@/components/
 export const Route = createFileRoute("/services/interior-design")({
   head: () => ({
     meta: [
-      { title: "Interior Design & Decoration in Delhi | TIP TOP INTERIORS" },
+      {
+        title:
+          "Interior Design & Decoration in Delhi | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         name: "description",
         content:
-          "Residential interiors, modular kitchens, bedrooms, lighting and furniture arrangements by TIP TOP INTERIORS in Delhi.",
+          "Residential interiors, modular kitchens, bedrooms, lighting and furniture arrangements by Khalid Carpenter and Woodwork Service Interior Decorator in Delhi.",
       },
-      { property: "og:title", content: "Interior Design | TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content: "Interior Design | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         property: "og:description",
         content: "Warm, functional home interiors designed around the way you live.",

@@ -5,13 +5,19 @@ import { ContactCta, ContentSection, HeroPage, ServiceGrid } from "@/components/
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Interior, Carpentry & Renovation Services | TIP TOP INTERIORS" },
+      {
+        title:
+          "Interior, Carpentry & Renovation Services | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         name: "description",
         content:
           "Explore custom woodwork, carpentry, modular furniture, interior decoration, false ceilings and renovation services in Laxmi Nagar, Delhi.",
       },
-      { property: "og:title", content: "Services | TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content: "Services | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         property: "og:description",
         content: "Carpentry, interior design and home renovation services in Delhi.",

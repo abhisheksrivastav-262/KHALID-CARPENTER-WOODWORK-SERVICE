@@ -5,13 +5,19 @@ import { ContactCta, ContentSection, HeroPage, ProjectGallery } from "@/componen
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Interior & Woodwork Gallery | TIP TOP INTERIORS" },
+      {
+        title:
+          "Interior & Woodwork Gallery | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         name: "description",
         content:
           "Explore representative inspiration for living rooms, bedrooms, modular kitchens, custom woodwork, wardrobes and false ceilings.",
       },
-      { property: "og:title", content: "Project Gallery | TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content: "Project Gallery | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       { property: "og:description", content: "Interior, carpentry and renovation inspiration." },
     ],
   }),

@@ -5,13 +5,20 @@ import { ContactCta, ContentSection, FeatureList, HeroPage } from "@/components/
 export const Route = createFileRoute("/services/renovation")({
   head: () => ({
     meta: [
-      { title: "Home Renovation & Maintenance in Delhi | TIP TOP INTERIORS" },
+      {
+        title:
+          "Home Renovation & Maintenance in Delhi | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         name: "description",
         content:
           "Home renovation, painting and polishing, POP work, civil work, false ceilings, repairs and house maintenance in Laxmi Nagar, Delhi.",
       },
-      { property: "og:title", content: "Renovation & Maintenance | TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content:
+          "Renovation & Maintenance | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         property: "og:description",
         content: "Practical home repairs, renovation, painting and finishing services in Delhi.",

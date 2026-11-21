@@ -80,15 +80,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Khalid Carpenter and Woodwork Service Interior Decorator | TIP TOP INTERIORS" },
+      {
+        title:
+          "Khalid Carpenter and Woodwork Service Interior Decorator | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         name: "description",
         content: "Interior decoration, custom woodwork and home renovation in Laxmi Nagar, Delhi.",
       },
-      { name: "author", content: "TIP TOP INTERIORS" },
+      { name: "author", content: "Khalid Carpenter and Woodwork Service Interior Decorator" },
       {
         property: "og:title",
-        content: "Khalid Carpenter and Woodwork Service Interior Decorator | TIP TOP INTERIORS",
+        content:
+          "Khalid Carpenter and Woodwork Service Interior Decorator | Khalid Carpenter and Woodwork Service Interior Decorator",
       },
       {
         property: "og:description",

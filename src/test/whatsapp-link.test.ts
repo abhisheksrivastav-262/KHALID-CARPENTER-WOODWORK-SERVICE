@@ -22,7 +22,7 @@ describe("enquiry WhatsApp message", () => {
 
     expect(message).toBe(
       [
-        "Hello TIP TOP INTERIORS,",
+        "Hello Khalid Carpenter and Woodwork Service Interior Decorator,",
         "",
         "I would like to enquire about your services.",
         "",

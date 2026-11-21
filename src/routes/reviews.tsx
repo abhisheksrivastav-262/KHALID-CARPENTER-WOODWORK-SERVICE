@@ -5,13 +5,18 @@ import { ContactCta, ContentSection, HeroPage, ReviewsContent } from "@/componen
 export const Route = createFileRoute("/reviews")({
   head: () => ({
     meta: [
-      { title: "Customer Reviews | TIP TOP INTERIORS, Delhi" },
+      {
+        title: "Customer Reviews | Khalid Carpenter and Woodwork Service Interior Decorator, Delhi",
+      },
       {
         name: "description",
         content:
           "Read the supplied customer review excerpts for Khalid Carpenter and Woodwork Service Interior Decorator. Rated 4.9 out of 5 from 15 Google reviews.",
       },
-      { property: "og:title", content: "Customer Reviews | TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content: "Customer Reviews | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         property: "og:description",
         content: "Customer feedback for carpentry and interior work in Delhi.",

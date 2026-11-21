@@ -13,7 +13,10 @@ export const Route = createFileRoute("/property")({
         content:
           "Contact M.K. PROPERTY for property sale, purchase, renting and collaboration enquiries in Delhi.",
       },
-      { property: "og:title", content: "M.K. PROPERTY | TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content: "M.K. PROPERTY | Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         property: "og:description",
         content: "A local point of contact for property enquiries in Delhi.",
@@ -56,7 +59,7 @@ function PropertyPage() {
       <HeroPage
         eyebrow="M.K. PROPERTY"
         title="A local connection for your next move."
-        description="M.K. PROPERTY is the real estate enquiry division associated with TIP TOP INTERIORS. Connect with Md. Khalid for local property sale, purchase, renting and collaboration enquiries."
+        description="M.K. PROPERTY is the real estate enquiry division associated with Khalid Carpenter and Woodwork Service Interior Decorator. Connect with Md. Khalid for local property sale, purchase, renting and collaboration enquiries."
         image={propertyApartment.url}
         imageAlt="Modern apartment building with balconies and landscaped grounds"
         breadcrumb={[{ label: "Property" }]}

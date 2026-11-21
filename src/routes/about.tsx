@@ -6,13 +6,18 @@ import { ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About TIP TOP INTERIORS | Md. Khalid, Delhi" },
+      {
+        title: "About Khalid Carpenter and Woodwork Service Interior Decorator | Md. Khalid, Delhi",
+      },
       {
         name: "description",
         content:
-          "Meet Md. Khalid and learn about the careful carpentry, interior work and customer-first approach behind TIP TOP INTERIORS in Delhi.",
+          "Meet Md. Khalid and learn about the careful carpentry, interior work and customer-first approach behind Khalid Carpenter and Woodwork Service Interior Decorator in Delhi.",
       },
-      { property: "og:title", content: "About TIP TOP INTERIORS" },
+      {
+        property: "og:title",
+        content: "About Khalid Carpenter and Woodwork Service Interior Decorator",
+      },
       {
         property: "og:description",
         content:
@@ -27,7 +32,7 @@ function AboutPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <HeroPage
-        eyebrow="ABOUT TIP TOP INTERIORS"
+        eyebrow="ABOUT Khalid Carpenter and Woodwork Service Interior Decorator"
         title="Good work begins with listening."
         description="Khalid Carpenter and Woodwork Service Interior Decorator brings practical craftsmanship and considered interior solutions to homes and commercial spaces across Delhi."
         image={customWardrobe.url}
@@ -38,9 +43,10 @@ function AboutPage() {
         <div className="grid gap-10 md:grid-cols-[1fr_0.8fr] md:items-center">
           <div>
             <p className="text-base leading-8 text-muted-foreground">
-              TIP TOP INTERIORS is the home interior and woodwork service led by Md. Khalid. From a
-              custom cabinet to renovation and finishing work, each enquiry starts with
-              understanding how the space is used and what the customer needs.
+              Khalid Carpenter and Woodwork Service Interior Decorator is the home interior and
+              woodwork service led by Md. Khalid. From a custom cabinet to renovation and finishing
+              work, each enquiry starts with understanding how the space is used and what the
+              customer needs.
             </p>
             <p className="mt-4 text-base leading-8 text-muted-foreground">
               The work is built around clear communication, considered material choices, neat
