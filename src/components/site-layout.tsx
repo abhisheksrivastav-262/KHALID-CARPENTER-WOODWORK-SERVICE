@@ -80,8 +80,8 @@ function Brand() {
         <span className="mb-1 text-[0.48rem] font-bold tracking-[0.22em] text-gold sm:text-[0.54rem]">
           TIP TOP INTERIOR
         </span>
-        <span className="whitespace-nowrap font-display text-[0.54rem] font-semibold tracking-[0.02em] text-background sm:text-sm sm:tracking-[0.04em]">
-          KHALID CARPENTER &amp; WOODWORK SERVICE
+        <span className="whitespace-nowrap font-display text-[clamp(0.55rem,2.35vw,0.72rem)] font-semibold tracking-[0.01em] text-background sm:text-sm sm:tracking-[0.02em] lg:text-base">
+          Khalid Carpenter &amp; Woodwork Service
         </span>
       </span>
     </Link>
@@ -92,16 +92,9 @@ function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-ink text-background shadow-lg">
-      <div className="border-b border-background/10">
-        <div className="site-container flex h-8 items-center justify-end gap-5 text-xs tracking-[0.08em] text-background/75">
+      <div className="hidden border-b border-background/10 sm:block">
+        <div className="site-container flex h-8 items-center justify-end text-xs tracking-[0.08em] text-background/75">
           <span className="hidden sm:inline">LAXMI NAGAR · DELHI</span>
-          <a
-            className="inline-flex items-center gap-2 transition-colors hover:text-gold"
-            href="tel:9212461719"
-          >
-            <Phone aria-hidden="true" className="size-3" />
-            CALL NOW · 9212461719
-          </a>
         </div>
       </div>
       <div className="site-container relative flex min-h-[4.5rem] items-center justify-between gap-4">
