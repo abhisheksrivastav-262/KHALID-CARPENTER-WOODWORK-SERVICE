@@ -40,7 +40,7 @@ export const serviceCards = [
     href: "/services/renovation",
   },
   {
-    title: "Painting & Polishing",
+    title: "House Painting Work",
     description: "Careful surface preparation and smooth, lasting finishes.",
     image: customWardrobe.url,
     alt: "Polished wood wardrobe and storage details",

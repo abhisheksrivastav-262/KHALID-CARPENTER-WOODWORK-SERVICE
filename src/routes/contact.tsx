@@ -4,7 +4,8 @@ import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 import { createWhatsAppUrl } from "@/lib/contact";
 import { EnquiryForm, HeroPage } from "@/components/page-content";
 
-const address = "J-3/137, J Extension, Krishna Kunj, Laxmi Nagar, Delhi – 110092, India.";
+const addressOne = "J-3/137, J Extension, Krishna Kunj, Laxmi Nagar, Delhi – 110092, India.";
+const addressTwo = "J3/149, Extension, Kishan Kunj, Laxmi Nagar, Delhi – 110092.";
 const mapEmbedUrl =
   "https://maps.google.com/maps?q=J-3%2F137%2C%20J%20Extension%2C%20Krishna%20Kunj%2C%20Laxmi%20Nagar%2C%20Delhi%20110092&output=embed";
 const mapDirectionsUrl =
@@ -20,7 +21,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Md. Khalid for carpentry, woodwork, interior decoration, renovation or M.K. Property enquiries. Call, WhatsApp or send an enquiry.",
+          "Contact Md. Khalid for carpentry, woodwork, interior decoration or renovation. Call, WhatsApp or send an enquiry.",
       },
       {
         property: "og:title",
@@ -38,7 +39,7 @@ function ContactPage() {
       <HeroPage
         eyebrow="CONTACT US"
         title="A better space starts with a conversation."
-        description="Speak with Md. Khalid about carpentry, interiors, renovation, maintenance or property enquiries."
+        description="Speak with Md. Khalid about carpentry, interiors, renovation and maintenance."
         image={interior.url}
         imageAlt="Light-filled contemporary interior in warm natural tones"
         breadcrumb={[{ label: "Contact" }]}
@@ -53,8 +54,7 @@ function ContactPage() {
               Khalid Carpenter and Woodwork Service Interior Decorator
             </h2>
             <p className="mt-2 text-sm leading-6 text-muted-foreground">
-              Interior decoration, woodwork, carpentry and renovation. M.K. PROPERTY enquiries
-              welcome.
+              Interior decoration, woodwork, carpentry and renovation.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a
@@ -78,15 +78,13 @@ function ContactPage() {
                 9212461719
               </a>
               <p className="mb-2 mt-6 flex items-center gap-2 text-xs font-bold tracking-[0.16em] text-gold-strong">
-                <MapPin aria-hidden="true" className="size-4" /> BUSINESS ADDRESS
+                <MapPin aria-hidden="true" className="size-4" /> ADDRESS NO. 1
               </p>
-              <p className="max-w-md text-sm leading-6 text-muted-foreground">{address}</p>
+              <p className="max-w-md text-sm leading-6 text-muted-foreground">{addressOne}</p>
               <p className="mb-2 mt-5 text-xs font-bold tracking-[0.16em] text-gold-strong">
-                ADDITIONAL ADDRESS
+                ADDRESS NO. 2
               </p>
-              <p className="max-w-md text-sm leading-6 text-muted-foreground">
-                J3/149, Extension, Kishan Kunj, Laxmi Nagar, Delhi – 110092, India.
-              </p>
+              <p className="max-w-md text-sm leading-6 text-muted-foreground">{addressTwo}</p>
               <a
                 className="mt-5 inline-flex items-center gap-2 text-xs font-bold tracking-wide hover:text-gold-strong"
                 href={mapDirectionsUrl}

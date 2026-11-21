@@ -13,7 +13,6 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ProjectsRouteImport } from './routes/projects'
-import { Route as PropertyRouteImport } from './routes/property'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ServicesInteriorDesignRouteImport } from './routes/services/interior-design'
@@ -38,11 +37,6 @@ const ContactRoute = ContactRouteImport.update({
 const ProjectsRoute = ProjectsRouteImport.update({
   id: '/projects',
   path: '/projects',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PropertyRoute = PropertyRouteImport.update({
-  id: '/property',
-  path: '/property',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReviewsRoute = ReviewsRouteImport.update({
@@ -76,7 +70,6 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/projects': typeof ProjectsRoute
-  '/property': typeof PropertyRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRouteWithChildren
   '/services/interior-design': typeof ServicesInteriorDesignRoute
@@ -88,7 +81,6 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/projects': typeof ProjectsRoute
-  '/property': typeof PropertyRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRouteWithChildren
   '/services/interior-design': typeof ServicesInteriorDesignRoute
@@ -101,7 +93,6 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/projects': typeof ProjectsRoute
-  '/property': typeof PropertyRoute
   '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRouteWithChildren
   '/services/interior-design': typeof ServicesInteriorDesignRoute
@@ -115,7 +106,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/projects'
-    | '/property'
     | '/reviews'
     | '/services'
     | '/services/interior-design'
@@ -127,7 +117,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/projects'
-    | '/property'
     | '/reviews'
     | '/services'
     | '/services/interior-design'
@@ -139,7 +128,6 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/projects'
-    | '/property'
     | '/reviews'
     | '/services'
     | '/services/interior-design'
@@ -152,7 +140,6 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   ProjectsRoute: typeof ProjectsRoute
-  PropertyRoute: typeof PropertyRoute
   ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRouteWithChildren
 }
@@ -185,13 +172,6 @@ declare module '@tanstack/react-router' {
       path: '/projects'
       fullPath: '/projects'
       preLoaderRoute: typeof ProjectsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/property': {
-      id: '/property'
-      path: '/property'
-      fullPath: '/property'
-      preLoaderRoute: typeof PropertyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/reviews': {
@@ -253,7 +233,6 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   ProjectsRoute: ProjectsRoute,
-  PropertyRoute: PropertyRoute,
   ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRouteWithChildren,
 }

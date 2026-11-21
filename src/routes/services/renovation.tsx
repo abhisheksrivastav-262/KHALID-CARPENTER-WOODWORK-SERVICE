@@ -12,7 +12,7 @@ export const Route = createFileRoute("/services/renovation")({
       {
         name: "description",
         content:
-          "Home renovation, painting and polishing, POP work, civil work, false ceilings, repairs and house maintenance in Laxmi Nagar, Delhi.",
+          "Home renovation, house painting work, POP work, civil work, false ceilings, repairs and house maintenance in Laxmi Nagar, Delhi.",
       },
       {
         property: "og:title",
@@ -51,7 +51,7 @@ function RenovationPage() {
           <FeatureList
             items={[
               "Complete home renovation and room refreshes.",
-              "Painting, surface preparation and wood polishing.",
+              "House painting and careful surface preparation.",
               "POP work and false ceiling installation.",
               "Civil improvements and interior repairs.",
               "House maintenance and finishing services.",

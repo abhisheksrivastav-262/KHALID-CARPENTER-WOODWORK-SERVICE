@@ -7,7 +7,6 @@ import {
   interior as interiorImage,
   kitchen as kitchenImage,
   modularKitchen,
-  propertyApartment,
   renovation as renovationImage,
 } from "@/lib/site-images";
 import { useEffect, useState } from "react";
@@ -17,10 +16,8 @@ import {
   ArrowRight,
   ArrowUpRight,
   Building2,
-  Handshake,
   Hammer,
   Home,
-  KeyRound,
   MapPin,
   Paintbrush,
   PanelTop,
@@ -62,8 +59,8 @@ const services: { title: string; description: string; icon: LucideIcon; image: s
     image: ceilingImage.url,
   },
   {
-    title: "Painting & Polishing",
-    description: "Fresh finishes and careful polishing for walls and wood surfaces.",
+    title: "House Painting Work",
+    description: "Careful preparation and smooth, lasting finishes for your home.",
     icon: Paintbrush,
     image: customWardrobe.url,
   },
@@ -84,24 +81,6 @@ const services: { title: string; description: string; icon: LucideIcon; image: s
     description: "A considered mix of colour, materials and useful details.",
     icon: Sparkles,
     image: heroLivingRoom.url,
-  },
-  {
-    title: "Property Sale & Purchase",
-    description: "Local assistance for property sale and purchase enquiries.",
-    icon: Home,
-    image: propertyApartment.url,
-  },
-  {
-    title: "Property Renting",
-    description: "Support for finding or listing a rental property in the area.",
-    icon: KeyRound,
-    image: interiorImage.url,
-  },
-  {
-    title: "Property Collaboration",
-    description: "Connect about property collaboration opportunities.",
-    icon: Handshake,
-    image: customFurniture.url,
   },
 ];
 
@@ -175,6 +154,7 @@ const reviews = [
 ];
 
 const mainAddress = "J-3/137, J Extension, Krishna Kunj, Laxmi Nagar, Delhi – 110092, India.";
+const visitingAddress = "J3/149, Extension, Kishan Kunj, Laxmi Nagar, Delhi – 110092.";
 const mapEmbedUrl =
   "https://maps.google.com/maps?q=J-3%2F137%2C%20J%20Extension%2C%20Krishna%20Kunj%2C%20Laxmi%20Nagar%2C%20Delhi%20110092&output=embed";
 const mapDirectionsUrl =
@@ -426,8 +406,7 @@ function HomePage() {
               </p>
               <p className="mt-4 text-base leading-7 text-muted-foreground">
                 Whether you need a thoughtful room refresh, a fitted piece made for your space or
-                help with maintenance and property enquiries, Md. Khalid is ready to discuss your
-                needs.
+                help with maintenance, Md. Khalid is ready to discuss your needs.
               </p>
               <a
                 className="mt-8 inline-flex items-center gap-3 border-b border-gold-strong pb-2 text-sm font-bold text-foreground transition-colors hover:text-gold-strong"
@@ -686,38 +665,6 @@ function HomePage() {
           </div>
         </section>
 
-        <section id="property" className="relative overflow-hidden bg-ink text-background">
-          <img
-            src={interiorImage.url}
-            alt="Contemporary residential interior"
-            loading="lazy"
-            className="absolute inset-0 size-full object-cover opacity-35"
-          />
-          <div className="absolute inset-0 bg-ink/65" aria-hidden="true" />
-          <div className="site-container relative z-10 grid gap-8 py-16 md:grid-cols-[1fr_auto] md:items-center md:py-20">
-            <div>
-              <p className="mb-3 text-xs font-bold tracking-[0.2em] text-gold">M.K. PROPERTY</p>
-              <h2 className="font-display text-[clamp(1.75rem,3.2vw,2.625rem)] font-medium md:text-[2.625rem]">
-                A considered approach to property
-              </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-6 text-background/75">
-                Local assistance for property sale, purchase, renting and collaboration enquiries in
-                Delhi.
-              </p>
-            </div>
-            <a
-              className="inline-flex min-h-12 items-center justify-center gap-3 border border-gold px-6 text-xs font-bold tracking-[0.1em] text-gold transition-colors hover:bg-gold hover:text-ink"
-              href={createWhatsAppUrl(
-                "Hello, I would like to enquire with M.K. PROPERTY about a property.",
-              )}
-              target="_blank"
-              rel="noreferrer"
-            >
-              PROPERTY ENQUIRY <ArrowUpRight aria-hidden="true" />
-            </a>
-          </div>
-        </section>
-
         <section id="reviews" className="section-pad bg-ink text-background">
           <div className="site-container">
             <div className="grid gap-12 border-b border-background/15 pb-12 md:grid-cols-[0.75fr_1.25fr] md:items-end">
@@ -780,7 +727,7 @@ function HomePage() {
                   Khalid Carpenter and Woodwork Service Interior Decorator
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Contact Md. Khalid for carpentry, interiors, renovation or property enquiries.
+                  Contact Md. Khalid for carpentry, interiors and renovation enquiries.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <Button
@@ -834,14 +781,14 @@ function HomePage() {
                 </div>
                 <div className="mt-7 border-t border-border pt-6">
                   <p className="mb-2 flex items-center gap-2 text-xs font-bold tracking-[0.16em] text-gold-strong">
-                    <MapPin aria-hidden="true" className="size-4" /> BUSINESS ADDRESS
+                    <MapPin aria-hidden="true" className="size-4" /> ADDRESS NO. 1
                   </p>
                   <p className="max-w-md text-sm leading-6 text-muted-foreground">{mainAddress}</p>
                   <p className="mt-4 text-xs font-bold tracking-[0.16em] text-gold-strong">
-                    VISITING CARD ADDRESS
+                    ADDRESS NO. 2
                   </p>
                   <p className="mt-1 max-w-md text-sm leading-6 text-muted-foreground">
-                    J3/149, Extension, Kishan Kunj, Laxmi Nagar, Delhi – 110092.
+                    {visitingAddress}
                   </p>
                 </div>
               </div>

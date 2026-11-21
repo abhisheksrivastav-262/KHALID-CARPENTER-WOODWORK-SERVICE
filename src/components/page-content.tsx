@@ -404,12 +404,10 @@ export function EnquiryForm({
               "Interior Decoration",
               "Modular Kitchen",
               "POP & False Ceiling",
-              "Painting & Polishing",
+              "House Painting Work",
               "Home Renovation",
               "House Maintenance",
               "Civil Work",
-              "Property Sale & Purchase",
-              "Property Renting",
               "Other",
             ].map((item) => (
               <option value={item} key={item}>

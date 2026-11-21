@@ -16,7 +16,6 @@ is `src/routes/__root.tsx`.
 | `services/interior-design.tsx` | `/services/interior-design`                             |
 | `services/renovation.tsx`      | `/services/renovation`                                  |
 | `projects.tsx`                 | `/projects`                                             |
-| `property.tsx`                 | `/property`                                             |
 | `reviews.tsx`                  | `/reviews`                                              |
 | `contact.tsx`                  | `/contact`                                              |
 | `users/index.tsx`              | `/users`                                                |

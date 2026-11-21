@@ -22,7 +22,6 @@ describe("App routing", () => {
     "/services/interior-design",
     "/services/renovation",
     "/projects",
-    "/property",
     "/reviews",
     "/contact",
   ])("matches %s directly", (path) => {
@@ -30,5 +29,12 @@ describe("App routing", () => {
     const matches = router.matchRoutes(path);
 
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
+  });
+
+  it("does not expose the removed property page", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    const matches = router.matchRoutes("/property");
+
+    expect(matches.at(-1)?.routeId).toBe(rootRouteId);
   });
 });

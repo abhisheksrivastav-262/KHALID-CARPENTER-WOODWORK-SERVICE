@@ -7,4 +7,3 @@ export const interior = { url: "/images/modern-interior.jpg" };
 export const ceiling = { url: "/images/ceiling-lighting.jpg" };
 export const renovation = { url: "/images/bedroom-interior.jpg" };
 export const carpentry = { url: "/images/carpentry-workshop.jpg" };
-export const propertyApartment = { url: "/images/property-apartment.jpg" };

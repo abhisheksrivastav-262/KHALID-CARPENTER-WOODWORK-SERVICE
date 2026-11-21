@@ -7,7 +7,6 @@ const navigation = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
-  { label: "Property", href: "/property" },
   { label: "Reviews", href: "/reviews" },
   { label: "Contact", href: "/contact" },
 ];
@@ -78,6 +77,9 @@ function Brand({ showDecorator = true }: { showDecorator?: boolean }) {
         K
       </span>
       <span className="flex min-w-0 flex-col leading-none">
+        <span className="mb-1 text-[0.48rem] font-bold tracking-[0.18em] text-gold sm:text-[0.54rem]">
+          TIP TOP INTERIOR
+        </span>
         <span className="font-display text-lg font-semibold tracking-[0.04em] text-background sm:text-xl">
           KHALID
         </span>
@@ -208,7 +210,6 @@ function SiteFooter() {
             <br />
             Interior Decoration | Woodwork | Carpentry | Renovation
           </p>
-          <p className="mt-4 text-xs text-background/50">M.K. PROPERTY</p>
         </div>
         <div>
           <p className="mb-4 text-xs font-bold tracking-[0.16em] text-gold">QUICK LINKS</p>

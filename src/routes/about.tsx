@@ -50,8 +50,8 @@ function AboutPage() {
             </p>
             <p className="mt-4 text-base leading-8 text-muted-foreground">
               The work is built around clear communication, considered material choices, neat
-              finishing and respect for the home. M.K. PROPERTY offers a connected point of contact
-              for property sale, purchase, renting and collaboration enquiries.
+              finishing and respect for the home. Md. Khalid offers clear communication from the
+              first discussion through the completed work.
             </p>
             <a
               href="/contact"
