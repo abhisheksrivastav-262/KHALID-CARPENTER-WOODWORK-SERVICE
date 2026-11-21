@@ -1,0 +1,10 @@
+export const heroLivingRoom = { url: "/images/hero-living-room.jpg" };
+export const customFurniture = { url: "/images/custom-wood-furniture.jpg" };
+export const customWardrobe = { url: "/images/wardrobe-bedroom.jpg" };
+export const modularKitchen = { url: "/images/modular-kitchen.jpg" };
+export const kitchen = { url: "/images/kitchen-detail.jpg" };
+export const interior = { url: "/images/modern-interior.jpg" };
+export const ceiling = { url: "/images/ceiling-lighting.jpg" };
+export const renovation = { url: "/images/bedroom-interior.jpg" };
+export const carpentry = { url: "/images/carpentry-workshop.jpg" };
+export const propertyApartment = { url: "/images/property-apartment.jpg" };
